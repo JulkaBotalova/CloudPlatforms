@@ -10,14 +10,14 @@
 
 var s3 = new AWS.S3();
 
-s3.getObject({Bucket: 'firstbaket', Key: 'depositphotos_54081723-stock-photo-beautiful-nature-landscape.jpg'}, function(err, data){
+s3.getObject({Bucket: 'firstbaket', Key: 'pic2.png'}, function(err, data){
     if (err) console.log(err, err.stack); // an error occurred
     else     console.log(data);           // successful response
  });
 
 s3.putObject({
     Bucket: 'firstbaket',
-    Key: "pic1.png",
+    Key: "pic2.png",
  }, function(err, data){
     if (err) console.log(err, err.stack); // an error occurred
     else     console.log(data);           // successful response
